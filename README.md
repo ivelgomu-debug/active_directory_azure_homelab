@@ -41,8 +41,7 @@ Hands-on Active Directory lab built in Microsoft Azure to develop practical skil
 | Script | Description |
 |--------|-------------|
 | [Create_User_V2.ps1](Scripts/Create_User_V2.ps1) | Interactive AD user creation script with input validation and confirmation |
-| [User-ad-account-creation.ps1](Scripts%20Updated/User-ad-account-creation.ps1) | Improved version with better structure, summary output, and error handling |
-| [Scripts Updated/New-ADUser-Interactive.ps1](Scripts%20Updated/New-ADUser-Interactive.ps1) | Interactive Script with better structure
+| [New-ADUser-Interactive.ps1](Scripts%20Updated/New-ADUser-Interactive.ps1) | Main interactive AD user creation script with validation, summary, and error handling
 
 ## Screenshots
 
