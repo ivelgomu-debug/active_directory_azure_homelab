@@ -55,11 +55,12 @@ Hands-on Active Directory lab built in Microsoft Azure to develop practical skil
 
 Detailed documentation is available in the `docs/` folder:
 
-- Network design
-- DNS configuration
-- Active Directory setup
-- OU design
-- Troubleshooting
+- [Network Design](docs/01-network-design.md)
+- [DNS Configuration](docs/02-dns.md)
+- [Active Directory Setup](docs/03-active-directory.md)
+- [OU Design](docs/04-ou-design.md)
+- [Troubleshooting](docs/05-troubleshooting.md)
+
 
 ## Next Steps
 
