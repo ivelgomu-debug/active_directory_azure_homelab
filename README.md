@@ -1,40 +1,74 @@
 # Active Directory Azure Homelab
 
-Personal proof-of-concept lab built in Microsoft Azure to practice Windows Server, Active Directory Domain Services, and PowerShell administration.
+Hands-on Active Directory lab built in Microsoft Azure to develop practical skills in Windows Server administration, identity management, Group Policy, and PowerShell automation.
 
-**Context**: Built as a Service Desk Analyst learning infrastructure and identity fundamentals.
+**Context**: Created while working as a Service Desk Analyst to build real infrastructure experience and support a transition into Infrastructure / Cloud roles.
 
 ## Lab Overview
-- **Platform**: Microsoft Azure
-- **OS**: Windows Server (Evaluation)
-- **Domain**: lab.local
-- **Purpose**: Hands-on practice of deploying a Domain Controller, creating OUs/users/groups, and writing basic PowerShell automation
+
+| Component              | Details                                      |
+|------------------------|----------------------------------------------|
+| Platform               | Microsoft Azure                              |
+| Domain                 | lab.local                                    |
+| Domain Controller      | Windows Server                               |
+| Client                 | Domain-joined Windows machine                |
+| Networking             | Same VNet and subnet                         |
+| DNS                    | Clients point to the Domain Controller       |
+| Focus                  | AD DS, Group Policy, PowerShell              |
 
 ## What Was Built
-- Azure Virtual Machine running Windows Server
-- Promoted the server to a Domain Controller and created an Active Directory forest/domain (`lab.local`)
-- Created Organizational Units, security groups and user accounts
-- Wrote PowerShell scripts for user creation using the Active Directory module
+
+- Deployed and configured a Windows Server Domain Controller in Azure
+- Created the Active Directory domain `lab.local`
+- Configured DNS so clients resolve against the Domain Controller
+- Designed Organizational Units and security groups
+- Deployed a second virtual machine on the same VNet/subnet and successfully domain-joined it
+- Created and linked Group Policy Objects (Desktop Wallpaper and Folder Redirection)
+- Verified Group Policy application on the domain-joined client
+- Developed PowerShell scripts for Active Directory user creation with validation and error handling
+
+## Key Learning Outcomes
+
+- Active Directory Domain Services installation and configuration
+- DNS configuration for domain environments
+- Domain join process and client integration
+- Group Policy creation, linking, filtering, and troubleshooting
+- PowerShell automation using the Active Directory module
+- Basic identity and access management concepts
 
 ## Scripts
+
 | Script | Description |
 |--------|-------------|
-| [Create_User_V2.ps1](Scripts/Create_User_V2.ps1) | Interactive script to create a new Active Directory user with validation, confirmation and verification |
-| [Create_User_test.ps1](Scripts/Create_User_test.ps1) | Earlier version of the user creation script (kept for learning history) |
+| [Create_User_V2.ps1](Scripts/Create_User_V2.ps1) | Interactive AD user creation script with input validation and confirmation |
+| [User-ad-account-creation.ps1](Scripts%20Updated/User-ad-account-creation.ps1) | Improved version with better structure, summary output, and error handling |
+| [Scripts Updated/New-ADUser-Interactive.ps1](Scripts%20Updated/New-ADUser-Interactive.ps1) | Interactive Script with better structure
 
-## Skills Demonstrated
-- Azure Virtual Machine deployment
-- Active Directory Domain Services installation and promotion
-- Organizational Unit, user and group management
-- PowerShell Active Directory module (New-ADUser, Get-ADUser, etc.)
-- Basic scripting practices (parameters, validation, confirmation)
+## Screenshots
+
+- Domain Controller and Active Directory structure
+- Domain-joined client
+- Group Policy Objects (Wallpaper + Folder Redirection)
+- User and group management in Active Directory
+- DNS and networking configuration
+
+## Documentation
+
+Detailed documentation is available in the `docs/` folder:
+
+- Network design
+- DNS configuration
+- Active Directory setup
+- OU design
+- Troubleshooting
 
 ## Next Steps
-- Add a domain-joined Windows client
-- Create and test Group Policy Objects
-- Improve scripts for bulk user creation
-- Explore hybrid identity with Microsoft Entra ID (Azure AD Connect)
-- Learn Infrastructure as Code (Bicep or Terraform)
+
+- Expand PowerShell scripts to support bulk user creation from CSV
+- Implement additional Group Policies (mapped drives, security settings)
+- Explore hybrid identity with Microsoft Entra Connect
+- Introduce Infrastructure as Code using Bicep or Terraform
 
 ## Notes
-This was my first Virtual Machine lab and first PowerShell script. The lab is kept low-cost using Azure B-series VMs and is shut down when not in use.
+
+This lab is intentionally kept low-cost. Resources are shut down when not in use. The project is focused on practical learning and portfolio development.
