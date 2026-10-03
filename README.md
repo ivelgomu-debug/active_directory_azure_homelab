@@ -59,7 +59,7 @@ This lab uses a single Azure Virtual Network for simplicity and cost efficiency.
 | [Create_User_V2.ps1](Scripts/Create_User_V2.ps1) | Interactive AD user creation script with input validation and confirmation |
 | [New-ADUser-Interactive.ps1](Scripts%20Updated/New-ADUser-Interactive.ps1) | Main interactive AD user creation script with validation, summary, and error handling
 
-## 🖼️ Screenshots
+## Screenshots
 
 All screenshots are stored in the `/Screenshots` directory:
 
