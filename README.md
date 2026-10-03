@@ -36,6 +36,22 @@ Hands-on Active Directory lab built in Microsoft Azure to develop practical skil
 - PowerShell automation using the Active Directory module
 - Basic identity and access management concepts
 
+## Architecture Overview
+
+This lab uses a single Azure Virtual Network for simplicity and cost efficiency.
+
+**Azure Resources**
+- Resource Group: `rg-adlab-eastus-001`  
+- Virtual Network: `vnet-adlab-eastus-001`  
+- Subnet: `snet-servers (10.10.1.0/24)`  
+- Region: East US  
+
+**Virtual Machines**
+| VM Name | Role | Private IP |
+|--------|------|------------|
+| `vm-adlab-dc-01` | Domain Controller | 10.10.1.4 |
+| `vm-adlab-client-01` | Domain-joined Client | DHCP |
+
 ## Scripts
 
 | Script | Description |
@@ -43,11 +59,25 @@ Hands-on Active Directory lab built in Microsoft Azure to develop practical skil
 | [Create_User_V2.ps1](Scripts/Create_User_V2.ps1) | Interactive AD user creation script with input validation and confirmation |
 | [New-ADUser-Interactive.ps1](Scripts%20Updated/New-ADUser-Interactive.ps1) | Main interactive AD user creation script with validation, summary, and error handling
 
-## Screenshots
-See `/docs/screenshots` for full visuals:
-- [AD Structure](docs/screenshots/ad_structure.png)
-- [GPO Wallpaper](docs/screenshots/gpo_wallpaper.png)
-- [Folder Redirection](docs/screenshots/folder_redirection.png)
+## 🖼️ Screenshots
+
+All screenshots are stored in the `/Screenshots` directory:
+
+- [DC Network Configuration](Screenshots/01-dc-network-config.png)  
+- [Wallpaper GPO Applied](Screenshots/04-Wallpaper-Gpo-Applied.png)  
+- [Folder Redirection GPO](Screenshots/05-gpo-folder-redirection-setti.png)  
+- [Folder Redirection Share Setup](Screenshots/06-folder-redirection-share-set.png)  
+- [gpresult Output](Screenshots/07-gpresult-gpos-applied.png)  
+- [ADUC Users & Groups](Screenshots/ADUC-Users-Groups-V1Lab.png)  
+- [Azure VM Overview](Screenshots/Azure-VM-OverviewV1Lab.png)  
+- [Get-ADDomain Output](Screenshots/Get-ADDomain.png)  
+- [Windows Server DC](Screenshots/Windows-Server-DC.png)  
+
+#### Active Directory Structure  
+![AD Structure](Screenshots/ADUC-Users-Groups-V1Lab.png)
+
+#### Wallpaper GPO Applied  
+![Wallpaper GPO](Screenshots/04-Wallpaper-Gpo-Applied.png)
 - 
 ## Documentation
 
