@@ -6,20 +6,23 @@ Hands-on Active Directory lab built in Microsoft Azure to develop practical skil
 
 ## Lab Overview
 
-| Component              | Details                          |
-|------------------------|----------------------------------|
-| Platform               | Microsoft Azure                  |
-| Domain                 | lab.local                        |
-| Domain Controller      | Windows Server                   |
-| Client                 | Domain-joined Windows machine    |
-| Focus                  | AD DS, Group Policy, PowerShell  |
+| Component              | Details                                      |
+|------------------------|----------------------------------------------|
+| Platform               | Microsoft Azure                              |
+| Domain                 | lab.local                                    |
+| Domain Controller      | Windows Server                               |
+| Client                 | Domain-joined Windows machine                |
+| Networking             | Same VNet and subnet                         |
+| DNS                    | Clients point to the Domain Controller       |
+| Focus                  | AD DS, Group Policy, PowerShell              |
 
 ## What Was Built
 
 - Deployed and configured a Windows Server Domain Controller in Azure
 - Created the Active Directory domain `lab.local`
+- Configured DNS so clients resolve against the Domain Controller
 - Designed Organizational Units and security groups
-- Deployed a second virtual machine and successfully domain-joined it
+- Deployed a second virtual machine on the same VNet/subnet and successfully domain-joined it
 - Created and linked Group Policy Objects (including Desktop Wallpaper)
 - Verified Group Policy application on the domain-joined client
 - Developed PowerShell scripts for Active Directory user creation with validation and error handling
@@ -27,6 +30,7 @@ Hands-on Active Directory lab built in Microsoft Azure to develop practical skil
 ## Key Learning Outcomes
 
 - Active Directory Domain Services installation and configuration
+- DNS configuration for domain environments
 - Domain join process and client integration
 - Group Policy creation, linking, filtering, and troubleshooting
 - PowerShell automation using the Active Directory module
@@ -45,11 +49,12 @@ Hands-on Active Directory lab built in Microsoft Azure to develop practical skil
 - Domain-joined client
 - Group Policy Objects and settings
 - User and group management in Active Directory
+- DNS and networking configuration
 
 ## Next Steps
 
 - Expand PowerShell scripts to support bulk user creation from CSV
-- Implement additional Group Policies (mapped drives, security lockdowns)
+- Implement additional Group Policies (mapped drives, security settings)
 - Explore hybrid identity with Microsoft Entra Connect
 - Introduce Infrastructure as Code using Bicep or Terraform
 
