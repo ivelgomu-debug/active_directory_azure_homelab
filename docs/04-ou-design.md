@@ -1,17 +1,5 @@
 # OU Design
 
-## Structure
-lab.local
-├── Domain Controllers
-└── Lab
-    ├── LabUsers
-    ├── Lab_Security_Groups
-    └── Computers
-
-
-
-## Purpose of Each OU
-
 | OU Name               | Purpose                                      |
 |-----------------------|-----------------------------------------------|
 | Domain Controllers    | Default OU for domain controller objects      |
