@@ -50,7 +50,7 @@ $UserProperties = @{
     DisplayName = $DisplayName
     AccountPassword = $Password
     Enabled = $true
-    Path = "OU=_Users,DC=lab,DC=local"
+    Path = "OU=_Lab,DC=lab,DC=local"
     UserPrincipalName = "$SamAccountName@lab.local"
 }
 
