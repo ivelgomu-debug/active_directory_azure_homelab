@@ -44,13 +44,11 @@ Hands-on Active Directory lab built in Microsoft Azure to develop practical skil
 | [New-ADUser-Interactive.ps1](Scripts%20Updated/New-ADUser-Interactive.ps1) | Main interactive AD user creation script with validation, summary, and error handling
 
 ## Screenshots
-
-- Domain Controller and Active Directory structure
-- Domain-joined client
-- Group Policy Objects (Wallpaper + Folder Redirection)
-- User and group management in Active Directory
-- DNS and networking configuration
-
+See `/docs/screenshots` for full visuals:
+- [AD Structure](docs/screenshots/ad_structure.png)
+- [GPO Wallpaper](docs/screenshots/gpo_wallpaper.png)
+- [Folder Redirection](docs/screenshots/folder_redirection.png)
+- 
 ## Documentation
 
 Detailed documentation is available in the `docs/` folder:
