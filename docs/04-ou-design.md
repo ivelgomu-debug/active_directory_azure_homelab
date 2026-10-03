@@ -4,18 +4,24 @@
 lab.local
 ├── Domain Controllers
 └── Lab
-├── LabUsers
-├── Lab_Security_Groups
-└── Computers
+    ├── LabUsers
+    ├── Lab_Security_Groups
+    └── Computers
+
+
 
 ## Purpose of Each OU
 
 | OU Name               | Purpose                                      |
 |-----------------------|-----------------------------------------------|
-| _Lab                  | Top-level OU for all lab-related objects      |
+| Domain Controllers    | Default OU for domain controller objects      |
+| Lab                   | Top-level OU for all lab-related objects      |
 | LabUsers              | Stores all user accounts                      |
 | Lab_Security_Groups   | Security groups for access control            |
 | Computers             | Domain-joined client machines                 |
+
+## PowerShell Output
+
 
 ## Design Notes
 
