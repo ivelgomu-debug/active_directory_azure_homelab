@@ -2,15 +2,11 @@
 
 ## Structure
 lab.local
-└── 
-_Lab
-├── 
-LabUsers
-├── 
-Lab_Security_Groups
-└── 
-Computers (domain-joined clients)
-
+├── Domain Controllers
+└── Lab
+├── LabUsers
+├── Lab_Security_Groups
+└── Computers
 
 ## Purpose of Each OU
 
@@ -29,4 +25,4 @@ Computers (domain-joined clients)
 
 ## Screenshot
 
-![OU Structure](../Screenshots/ADUC-Users-Groups-V1Lab.png)
+![OU Structure](../Screenshots/LabV2-OU-Structure.png)
