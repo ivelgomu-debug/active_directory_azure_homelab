@@ -74,7 +74,7 @@ All screenshots are stored in the `/Screenshots` directory:
 - [Windows Server DC](Screenshots/Windows-Server-DC.png)  
 
 #### Active Directory Structure  
-![AD Structure](Screenshots/ADUC-Users-Groups-V1Lab.png)
+![AD Structure](Screenshots/LabV2-OU-Structure.png)
 
 #### Wallpaper GPO Applied  
 ![Wallpaper GPO](Screenshots/04-Wallpaper-Gpo-Applied.png)
