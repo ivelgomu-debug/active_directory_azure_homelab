@@ -23,7 +23,7 @@ Hands-on Active Directory lab built in Microsoft Azure to develop practical skil
 - Configured DNS so clients resolve against the Domain Controller
 - Designed Organizational Units and security groups
 - Deployed a second virtual machine on the same VNet/subnet and successfully domain-joined it
-- Created and linked Group Policy Objects (including Desktop Wallpaper)
+- Created and linked Group Policy Objects (Desktop Wallpaper and Folder Redirection)
 - Verified Group Policy application on the domain-joined client
 - Developed PowerShell scripts for Active Directory user creation with validation and error handling
 
@@ -41,15 +41,25 @@ Hands-on Active Directory lab built in Microsoft Azure to develop practical skil
 | Script | Description |
 |--------|-------------|
 | [Create_User_V2.ps1](Scripts/Create_User_V2.ps1) | Interactive AD user creation script with input validation and confirmation |
-| [User-ad-account-creation.ps1](Scripts%20Updated/User-ad-account-creation.ps1) | Improved version with better structure, summary output, and error handling |
+| [New-ADUser-Interactive.ps1](Scripts%20Updated/New-ADUser-Interactive.ps1) | Main interactive AD user creation script with validation, summary, and error handling
 
 ## Screenshots
 
 - Domain Controller and Active Directory structure
 - Domain-joined client
-- Group Policy Objects and settings
+- Group Policy Objects (Wallpaper + Folder Redirection)
 - User and group management in Active Directory
 - DNS and networking configuration
+
+## Documentation
+
+Detailed documentation is available in the `docs/` folder:
+
+- Network design
+- DNS configuration
+- Active Directory setup
+- OU design
+- Troubleshooting
 
 ## Next Steps
 
