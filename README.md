@@ -65,8 +65,8 @@ All screenshots are stored in the `/Screenshots` directory:
 
 - [DC Network Configuration](Screenshots/01-dc-network-config.png)  
 - [Wallpaper GPO Applied](Screenshots/04-Wallpaper-Gpo-Applied.png)  
-- [Folder Redirection GPO](Screenshots/05-gpo-folder-redirection-setti.png)  
-- [Folder Redirection Share Setup](Screenshots/06-folder-redirection-share-set.png)  
+- [Folder Redirection GPO](Screenshots/05-gpo-folder-redirection-settings.png)  
+- [Folder Redirection Share Setup](Screenshots/06-folder-redirection-share-setup.png)  
 - [gpresult Output](Screenshots/07-gpresult-gpos-applied.png)  
 - [ADUC Users & Groups](Screenshots/ADUC-Users-Groups-V1Lab.png)  
 - [Azure VM Overview](Screenshots/Azure-VM-OverviewV1Lab.png)  
